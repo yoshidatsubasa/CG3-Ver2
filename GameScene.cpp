@@ -105,6 +105,7 @@ void GameScene::Draw()
 #pragma endregion
 #pragma region 前景スプライト描画
 	// 前景スプライト描画前処理
+
 	Sprite::PreDraw(cmdList);
 	/// <summary>
 	/// ここに前景スプライトの描画処理を追加できる
