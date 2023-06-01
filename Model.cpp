@@ -121,6 +121,7 @@ void Model::Initialize(const std::string& modelname, bool smoothing) {
 			texcoord.y = 1.0f - texcoord.y;
 			// テクスチャ座標データに追加
 			texcoords.emplace_back(texcoord);
+
 		}
 		// 先頭文字列がvnなら法線ベクトル
 		if (key == "vn") {

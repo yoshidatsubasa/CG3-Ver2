@@ -4,6 +4,7 @@
 #include "DebugText.h"
 #include "DirectXCommon.h"
 #include "Input.h"
+#include "Light.h"
 #include "Object3d.h"
 #include "Sprite.h"
 #include <DirectXMath.h>
@@ -45,6 +46,9 @@ public: // メンバ関数
 	/// </summary>
 	void Update();
 
+	//ライトの更新
+	void LightUpdate();
+
 	/// <summary>
 	/// 描画
 	/// </summary>
@@ -55,6 +59,7 @@ private: // メンバ変数
 	Input* input = nullptr;
 	DebugText debugText;
 	DebugCamera* camera = nullptr;
+	Light* light = nullptr;
 
 	/// <summary>
 	/// ゲームシーン用
